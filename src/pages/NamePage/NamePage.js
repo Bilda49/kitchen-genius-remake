@@ -48,6 +48,7 @@ const NamePage = () => {
   // Функция для обработки смены страницы
   const handlePageChange = (page) => {
     setCurrentPage(page);
+    window.scrollTo(0, 0); // Прокрутить страницу вверх при изменении страницы
   };
 
   return (
