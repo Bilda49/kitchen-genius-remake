@@ -1,0 +1,149 @@
+.recipe-instructions-name {
+  white-space: pre-line;
+}
+
+.instrName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  margin-top: 5%;
+  color: aliceblue;
+  background-color: #333333d6;
+  width: 50%;
+  margin-left: 25%;
+  padding: 10px;
+}
+
+.formInpName {
+  display: flex;
+  justify-content: center;
+  height: 100px; /* Уменьшенная высота */
+  margin-bottom: 3%;
+  padding-top: 1%;
+}
+
+.inputName {
+  width: 30%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  transition: width 0.3s;
+  font-family: Consolas, monaco, monospace;
+  padding: 15px;
+}
+
+.inputName:focus {
+  outline: 1px #403e3ed6;
+  box-shadow: none;
+  width: 40%;
+}
+
+.inputName::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.cardDivName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 10%;
+}
+
+.mainCardName {
+  max-width: 500px; /* Максимальная ширина для карточки */
+  width: 100%; /* Чтобы карточки занимали всю доступную ширину в пределах максимальной ширины */
+}
+
+@media (max-width: 768px) {
+  .instrName {
+    /* Пример: изменение ширины и выравнивания */
+    margin: 85% 10px 10px 10px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+}
+
+button {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: #1f2937;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0.6em;
+  margin-top: -0.25em;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.label {
+  position: relative;
+  top: -1px;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: rgba(16, 185, 129, 0.6);
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+  width: 14em;
+  height: 14em;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.pageSpanName {
+  margin: 15px 15px;
+}
+
+.bottomInfoName {
+  margin-top: 5%;
+  bottom: 0;
+  width: 100%;
+  background-color: #333333;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+}
+
+.footerLink {
+  text-decoration: none;
+  margin-left: 15px;
+}
